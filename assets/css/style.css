@@ -1,10 +1,99 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5% ;
+html {
+  font-size: 62.5%;
 }
 /* khôi phục cỡ chữ mặc định theo rem*/
-body{
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+/*=======================common=======================  */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 px 16px;
+  line-height: 50px;
+  min-width: 118px;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 1.6rem;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 144;
+  height: 50;
+  top: 36px;
+  left: 1161px;
+  border-radius: 24.5px;
+  opacity: 1;
+  background-color: #171100;
+}
+
+/*=======================header=======================  */
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  position: relative;
+  font-style: Regular;
+  font-size: 1.6rem;
+  letter-spacing: 0%;
+  /* text-align: center; */
+  color: #5f5b53;
+  padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  opacity: 1;
+  border-radius: 1px;
+  background-color: #171100;
+}
+.header .btn-sign-up {
+  min-width: 144px;
+}
+.header .action {
+  margin-left: 49px;
 }
