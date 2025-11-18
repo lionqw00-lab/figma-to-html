@@ -19,6 +19,17 @@ body {
 a {
   text-decoration: none;
 }
+
+.heading-lv2{
+  font-family: Sen;
+font-weight: 700;
+font-style: Bold;
+font-size: 3.8rem;
+line-height: 1.27;
+letter-spacing: -2%;
+
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -275,4 +286,44 @@ margin-right: 15px;
 }
 .hero .stats strong:nth-child(2){
   margin-left: 28px;
+}
+
+/*=======================popular =======================  */
+.popular{
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-top .desc{
+  margin-top: 16px;
+  width: 458px;
+font-size: 1.8rem;
+line-height: 1.67;
+color: #5F5B53;
+;
+}
+
+.popular-top .control{
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 1px solid var(--primary-color);
+}
+.popular-top .control-btn:hover{
+  background-color: var(--primary-color);
+  color: #Fff;
 }
