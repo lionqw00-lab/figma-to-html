@@ -63,6 +63,21 @@ letter-spacing: -2%;
   cursor: pointer;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2{
+  --line-clamp:2;
+}
+
+.break-all{
+  word-break: break-all;
+}
+
 /*=======================header=======================  */
 .header {
   background: #fffcf4;
@@ -416,3 +431,4 @@ color: #171100;
 .popular .course-item .btn-book:hover{
   background-color: var(--primary-color);
 }
+
