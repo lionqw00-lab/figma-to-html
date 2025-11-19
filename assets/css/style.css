@@ -432,3 +432,77 @@ color: #171100;
   background-color: var(--primary-color);
 }
 
+/*=======================feedback=======================  */
+.feedback{
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2E2100;
+}
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback-item{
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.feedback-item .avatar{
+width: 72px;
+height: 72px;
+opacity: 1;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.feedback-item .info .member-name{
+  margin-top: 18px;
+  font-family: var(--font-heading);
+font-weight: 700;
+font-style: Bold;
+font-size: 2.4rem;
+line-height: 1.42;
+color: #F7F7F7;
+
+}
+
+.feedback-item .info .desc{
+  margin-top: 4px;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 1.86;
+}
+
+.feedback-item .dots{
+  gap: 6px;
+  margin-top: 28px;
+  display: flex;
+}
+
+.feedback-item .dot{
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .content{
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote{
+font-style: Italic;
+font-size: 2.6rem;
+line-height: 1.54;
+color: #Fff;
+}
+
+.feedback-item .dot.active{
+  background: var(--primary-color);
+  cursor: default;
+}
